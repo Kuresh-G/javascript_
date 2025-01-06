@@ -21,3 +21,15 @@ const myFunction = function(){
 console.log(typeof heroes)
 console.log(typeof myFunction)
 console.log(typeof id_1)
+
+// stack (primitive ) gives copy  and heap (non - primitive) gives reference
+let ytname = "gamer kuresh"
+let orig_name = ytname
+orig_name =  "hatim"
+console.log(orig_name === ytname)
+console.log(ytname)    // original does not changes
+
+let user1={ name: "kuresh ", age: 20 }
+let user2=user1
+user2.name="hatim"
+console.log(user1)      // original changes too
